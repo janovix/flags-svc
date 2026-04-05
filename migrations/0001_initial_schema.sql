@@ -18,4 +18,5 @@ INSERT OR IGNORE INTO flag_definitions (key, name, description, type, default_va
 VALUES
     ('watchlist-pep-search', 'Watchlist PEP search', 'Enable PEP list search in watchlist', 'boolean', 'true', 1, NULL, NULL, '["watchlist"]', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
     ('watchlist-pep-grok', 'Watchlist PEP Grok', 'Enable Grok-based PEP enrichment', 'boolean', 'true', 1, NULL, NULL, '["watchlist"]', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-    ('watchlist-adverse-media', 'Watchlist adverse media', 'Enable adverse media screening', 'boolean', 'true', 1, NULL, NULL, '["watchlist"]', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    ('watchlist-adverse-media', 'Watchlist adverse media', 'Enable adverse media screening', 'boolean', 'true', 1, NULL, NULL, '["watchlist"]', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('stripe-billing-enabled', 'Stripe Billing', 'Enable Stripe billing integration platform-wide', 'boolean', 'false', 1, NULL, NULL, '["billing","stripe"]', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
