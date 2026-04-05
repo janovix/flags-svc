@@ -1,0 +1,33 @@
+{
+	"compatibility_date": "2025-10-08",
+	"main": "src/index.ts",
+	"name": "flags-svc",
+	"upload_source_maps": true,
+	"workers_dev": true,
+	"compatibility_flags": [
+		"nodejs_als",
+		// "nodejs_compat"
+	],
+	"version_metadata": {
+		"binding": "CF_VERSION_METADATA",
+	},
+	"observability": {
+		"enabled": true,
+	},
+	"vars": {
+		"ENVIRONMENT": "development",
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "flags-dev",
+			"database_id": "e80468ed-85cc-45de-9783-1749cc5026e1",
+		},
+	],
+	"kv_namespaces": [
+		{
+			"binding": "KV",
+			"id": "31adc4898c3742a1a5b985cc38f98b30",
+		},
+	],
+}
