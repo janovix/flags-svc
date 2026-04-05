@@ -1,3 +1,10 @@
+# 1.0.0-rc.1 (2026-04-05)
+
+
+### Features
+
+* refactor project structure and implement feature flag service ([a10fb72](https://github.com/janovix/flags-svc/commit/a10fb72ab70fcf7cda9010f40c2bdea8ef2304af))
+
 # [1.2.0](https://github.com/algtools/backend-template/compare/v1.1.0...v1.2.0) (2026-03-06)
 
 
