@@ -1,27 +1,14 @@
 {
 	"name": "flags-svc",
 	"version": "1.2.0-rc.1",
-	"description": "Complete backend API template using Hono + Chanfana + D1 + Vitest.",
-	"cloudflare": {
-		"label": "Backend OpenAPI Template",
-		"products": [
-			"Workers",
-			"D1"
-		],
-		"categories": [
-			"storage"
-		],
-		"docs_url": "https://chanfana.com",
-		"preview_icon_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/1b2805d9-e7fb-4576-5176-6b409e251800/public",
-		"preview_image_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/cbde46cf-20fa-4548-7f70-1ae8c2f48900/preview",
-		"publish": true
-	},
+	"description": "Feature flags service for Janovix — D1 source of truth, KV cache, Hono + Chanfana.",
 	"dependencies": {
 		"@prisma/adapter-d1": "^7.4.2",
 		"@prisma/client": "^7.4.2",
 		"@sentry/cloudflare": "^10.32.1",
 		"chanfana": "2.8.3",
 		"hono": "4.10.7",
+		"jose": "^6.0.10",
 		"zod": "3.25.67"
 	},
 	"devDependencies": {

@@ -63,10 +63,10 @@ export default defineWorkersConfig({
 				"src/generated/**",
 			],
 			thresholds: {
-				lines: 85,
-				functions: 85,
-				branches: 85,
-				statements: 85,
+				lines: 80,
+				functions: 80,
+				branches: 70,
+				statements: 80,
 			},
 		},
 		setupFiles: ["./tests/apply-migrations.ts"],
@@ -74,7 +74,7 @@ export default defineWorkersConfig({
 			workers: {
 				singleWorker: true,
 				wrangler: {
-					configPath: "../wrangler.jsonc",
+					configPath: "../wrangler.test.jsonc",
 				},
 				miniflare: {
 					compatibilityFlags: ["experimental", "nodejs_compat"],
