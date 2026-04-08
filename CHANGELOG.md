@@ -1,3 +1,17 @@
+# [1.0.0-rc.2](https://github.com/janovix/flags-svc/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2026-04-05)
+
+
+### Features
+
+* add stripe billing feature flag to initial schema ([b5dbfa4](https://github.com/janovix/flags-svc/commit/b5dbfa47510dce9e25e132fd6461cf0feb426315))
+
+# 1.0.0-rc.1 (2026-04-05)
+
+
+### Features
+
+* refactor project structure and implement feature flag service ([a10fb72](https://github.com/janovix/flags-svc/commit/a10fb72ab70fcf7cda9010f40c2bdea8ef2304af))
+
 # [1.2.0](https://github.com/algtools/backend-template/compare/v1.1.0...v1.2.0) (2026-03-06)
 
 

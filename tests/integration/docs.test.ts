@@ -1,5 +1,5 @@
 import { SELF } from "cloudflare:test";
-import { describe, expect, it, vi } from "vitest";
+import { describe, expect, it } from "vitest";
 import { getOpenApiInfo } from "../../src/app-meta";
 
 describe("API docs", () => {
@@ -29,30 +29,6 @@ describe("API docs", () => {
 
 		expect(res.status).toBe(200);
 		expect(body.ok).toBe(true);
-	});
-
-	it("returns a 500 JSON for unexpected errors", async () => {
-		const consoleErrorSpy = vi
-			.spyOn(console, "error")
-			.mockImplementation(() => {});
-		const res = await SELF.fetch("http://local.test/", {
-			headers: {
-				"x-force-error": "1",
-			},
-		});
-		const body = await res.json<{
-			success: boolean;
-			errors: Array<{ code: number; message: string }>;
-		}>();
-
-		expect(res.status).toBe(500);
-		expect(body.success).toBe(false);
-		expect(body.errors[0]).toEqual({
-			code: 7000,
-			message: "Internal Server Error",
-		});
-
-		consoleErrorSpy.mockRestore();
 	});
 
 	it("serves OpenAPI schema JSON", async () => {

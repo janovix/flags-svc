@@ -22,6 +22,9 @@ importers:
       hono:
         specifier: 4.10.7
         version: 4.10.7
+      jose:
+        specifier: ^6.0.10
+        version: 6.2.2
       zod:
         specifier: 3.25.67
         version: 3.25.67
@@ -3775,6 +3778,12 @@ packages:
         integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==,
       }
     hasBin: true
+
+  jose@6.2.2:
+    resolution:
+      {
+        integrity: sha512-d7kPDd34KO/YnzaDOlikGpOurfF0ByC2sEV4cANCtdqLlTfBlw2p14O/5d/zv40gJPbIQxfES3nSx1/oYNyuZQ==,
+      }
 
   js-tokens@4.0.0:
     resolution:
@@ -8109,6 +8118,8 @@ snapshots:
   java-properties@1.0.2: {}
 
   jiti@2.6.1: {}
+
+  jose@6.2.2: {}
 
   js-tokens@4.0.0: {}
 

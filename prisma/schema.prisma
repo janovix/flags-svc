@@ -1,3 +1,5 @@
+// NOTE: All column names use snake_case via @map directives for consistency
+
 generator client {
   provider = "prisma-client"
   output   = "../src/generated/prisma"
@@ -8,14 +10,18 @@ datasource db {
   provider = "sqlite"
 }
 
-/// Custom table — uses @map directives for snake_case columns.
-model Task {
-  id          Int      @id @default(autoincrement())
-  name        String
-  slug        String
-  description String
-  completed   Boolean
-  dueDate     DateTime @map("due_date")
+model FlagDefinition {
+  key           String   @id @map("key")
+  name          String
+  description   String?  @map("description")
+  type          String   @default("boolean") @map("type")
+  defaultValue  String   @map("default_value")
+  enabled       Boolean  @default(true) @map("enabled")
+  environments  String?  @map("environments")
+  targeting     String?  @map("targeting")
+  tags          String?  @map("tags")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
 
-  @@map("tasks")
+  @@map("flag_definitions")
 }
