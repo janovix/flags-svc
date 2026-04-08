@@ -1,6 +1,6 @@
 {
 	"name": "flags-svc",
-	"version": "1.0.0-rc.2",
+	"version": "1.0.0",
 	"description": "Feature flags service for Janovix — D1 source of truth, KV cache, Hono + Chanfana.",
 	"dependencies": {
 		"@prisma/adapter-d1": "^7.4.2",
