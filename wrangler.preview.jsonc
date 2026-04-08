@@ -18,13 +18,13 @@
 		{
 			"binding": "DB",
 			"database_name": "flags-preview",
-			"database_id": "f32ac4a8-38e0-4cdb-afba-908d999afae4",
+			"database_id": "7caf8c31-4bd8-4c90-a004-e7e9fa9433c2",
 		},
 	],
 	"kv_namespaces": [
 		{
 			"binding": "KV",
-			"id": "b13d5908c4634af18b44c54936fe464b",
+			"id": "cbeaa0499df8442297b357bd9447d4e9",
 		},
 	],
 }
